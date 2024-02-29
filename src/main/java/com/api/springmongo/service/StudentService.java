@@ -17,4 +17,8 @@ public interface StudentService {
     Student saveOrUpdateStudent(Student student);
 
     void deleteStudentById(String id);
+
+    List<Student> findByEmailAndStudentNumber(String email, long studentNumber);
+
+    List<Student> findByQuery(String email);
 }
